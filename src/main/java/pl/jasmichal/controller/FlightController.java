@@ -22,7 +22,7 @@ public class FlightController {
     @PostMapping
     public String getFlightData(@RequestParam long flightNumber) {
         logger.info("FR " + flightNumber);
-        String url = "http://aviation-edge.com/v2/public/flights?key=07cf31-be1c81&flightIata=FR" + flightNumber;
+        String url = "http://aviation-edge.com/v2/public/flights?key=&flightIata=FR" + flightNumber;
         return "redirect:" + url;
 
     }
