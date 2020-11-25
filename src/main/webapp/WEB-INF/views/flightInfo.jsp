@@ -11,7 +11,7 @@
     <h3>From: ${item.departure.iataCode} >>> Departure time: ${item.departure.scheduledTime}</h3>
     <h3>To: ${item.arrival.iataCode} >>> Arrival time: ${item.arrival.scheduledTime}</h3>
 </c:forEach>
-<form action="/seatNo" method="post">
+<form action="/flight/seatNo" method="post">
     Jeśli dane są poprawne, zaznacz swoje miejsce:
     <label>
         <select name="seatNum">

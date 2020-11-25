@@ -12,7 +12,7 @@
     <h3>To: ${item.arrival.iataCode} >>> Arrival time: ${item.arrival.scheduledTime}</h3>
 </c:forEach>
 <h1>Your seat: ${seat}</h1>
-<form action="/seatsToSwap" method="post">
+<form action="/flight/seatsToSwap" method="post">
     Teraz podaj miejsca, które cię interesują:<br>
     <table style="width: 50%" border="1px">
         <tr>
